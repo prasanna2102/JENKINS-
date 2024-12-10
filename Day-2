@@ -9,7 +9,7 @@ Continous Download:
 4.Go to managed jenkins->configure credentials for github
 5.Build trigger-->GitHub hook trigger for GITScm polling.
     This allows Jenkins to build automatically when it receives a webhook notification from GitHub.
-6.setup webhook->add webhook->payload url(jenkins server in manage jenkins->system)
+6.setup webhook->add webhook->payload url(jenkins server url in ur browser)
 7.Set Content type to application/json
 8.Choose the event triggers:
     Recommended: Just the push event.
