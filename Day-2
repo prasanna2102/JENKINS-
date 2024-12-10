@@ -1,0 +1,16 @@
+How to integrate jenkins with Github:
+
+Continous Download:
+
+1.create a free style job
+2.Install github and git plugin
+2.Source code Management-git
+3.Enter repository url of github which is to be download continously.
+4.Go to managed jenkins->configure credentials for github
+5.Build trigger-->GitHub hook trigger for GITScm polling.
+    This allows Jenkins to build automatically when it receives a webhook notification from GitHub.
+6.setup webhook->add webhook->payload url(jenkins server in manage jenkins->system)
+7.Set Content type to application/json
+8.Choose the event triggers:
+    Recommended: Just the push event.
+9.Click Add Webhook.
